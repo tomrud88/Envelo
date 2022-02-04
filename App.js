@@ -35,11 +35,11 @@ function validateCode() {
 function validate() {
     if (number.value.toString().length == 9 &&
     code.value.toString().length == 4) {
-      confirm.classList.remove('confirmNotActive')
+      confirm.classList.remove('confirmNotActive');
       confirm.disabled = false;
     } else {
       confirm.disabled = true;
-      confirm.classList.add('confirmNotActive')
+      confirm.classList.add('confirmNotActive');
     }
 }
 
@@ -48,7 +48,7 @@ number.addEventListener("input", function () {
   validate();
 });
 code.addEventListener("input", function () {
-  validateCode()
+  validateCode();
   validate();
 });
 
