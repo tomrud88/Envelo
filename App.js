@@ -54,12 +54,11 @@ code.addEventListener("input", function () {
 
 
 confirm.addEventListener('click', function (event) {
-  event.preventDefault();
+ // event.preventDefault();
   if (number.value.toString().length == 9 &&
     code.value.toString().length == 4) {
     loader.classList.add("loaderActive");
     confirm.classList.add("confirmLoading");
-    console.log('hello')
     setTimeout(() => {
      modalBg.classList.add("activeModal");
      number.value = null;
@@ -71,7 +70,6 @@ confirm.addEventListener('click', function (event) {
   inputArea.classList.toggle("activeInputArea");
   validate()
   event.preventDefault();
-  console.log('active')
 })
 
 finish.addEventListener('click', function () {

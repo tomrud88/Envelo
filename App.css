@@ -177,7 +177,7 @@ input{
   100% { transform: rotate(360deg); }
 }
 
-@media(min-width: 1300px){
+@media(min-width: 1200px){
     .box{
         width: 30%;
         height: 50%;
@@ -203,7 +203,7 @@ input{
     }
     .numberWarningActive{
       font-size: 21px;
-    };
+    }
     .codeWarningActive{
       font-size: 21px;
     }
@@ -217,5 +217,49 @@ input{
     }
     .modal button{
       font-size: 20px;
+    }
+}
+@media(max-width: 500px){
+    .box{
+        width:85%;
+        min-height: 50%;
+    };
+    .inputArea{
+        width: 100%;
+    }
+    label{
+        font-size: 20px;
+    }
+    input{
+        width: 300px;
+    }
+    
+    .mainInfo{
+        font-size: 22px;
+        text-align: center;
+    }
+    .confirm{
+        font-size: 18px;
+    }
+    .numberWarningActive{
+      font-size: 18px;
+    }
+    .codeWarningActive{
+      font-size: 18px;
+    }
+    .modal{
+        width: 80%;
+        height: 40%;
+        font-size: 30px;
+    }
+    .mainMessageModal{
+        text-align: center;
+        font-size: 28px;
+    }
+    .modalAsk{
+        font-size: 22px;
+    }
+    .modal button{
+      font-size: 13px;
     }
 }
