@@ -14,10 +14,10 @@ var loader = document.querySelector('.loader')
     
 function validateNumber() {
   if (number.value.toString().length !== 9) {
-    numberWarning.classList.add('numberWarningActive')
+    numberWarning.classList.add('numberWarningActive');
     inputNum.classList.add("notValid");
   } else if (number.value.toString().length == 9){
-    numberWarning.classList.remove('numberWarningActive')
+    numberWarning.classList.remove('numberWarningActive');
     inputNum.classList.remove("notValid");
   }
 } 
