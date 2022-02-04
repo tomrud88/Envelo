@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paczkomat</title>
+    <link rel="stylesheet" href="App.css">
+</head>
+<body>
+    <div class="box">
+    <h1 class="brand">ENVELO</h1>
+    <h4 class="mainInfo">Mozesz miec swoja przesylke w kilkanascie sekund.<br>Rozpocznij klikajac w przycisk</h4>
+     <div class="loader"></div>
+    <form class='insertForm'>
+        <div class="inputArea">
+        <label for='number'>Numer telefonu</label>
+        <input class='numberInput' type="number" id='number'  name='number'required minlength="9" maxlength="9">
+        <p class='numberWarning'>numer telefonu musi zawierac 9 cyfr</p>
+        <label for='code'>Kod odbioru</label>
+        <input class='codeInput'type="number" name='code'
+        required minlength="4" maxlength="4">
+         <p class='codeWarning'>kod musi zawierac 4 cyfry</p>
+        </div>
+        <button class='confirm' type='submit' ><span class='confirmText'>Odbierz paczke</span></button>
+    </form>
+    
+    <div class="modalbg">
+    <div class='modal'>
+        <h2 class="mainMessageModal">Paczka odebrana!</h2>
+        <p class="modalAsk">Czy mozemy zrobic dla ciebie cos jeszcze?</p>
+        <div class='buttonGroup'>
+        <button class="finish">To wszystko na dzis</button>
+        <button class="anotherOne">Odbierz kolejna paczke</button>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="App.js"></script>
+</body>
+</html>
